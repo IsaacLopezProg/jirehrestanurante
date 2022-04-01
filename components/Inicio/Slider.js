@@ -1,49 +1,92 @@
-import React from 'react';
+import React, { useRef, useState } from "react";
 import Image from 'next/image';
 
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+
+
+// import required modules
+import { Pagination, Autoplay } from "swiper";
+
+
 export default function Slider() {
+
+
+
+
     return (
+
         <>
-            <div id="default-carousel" className="relative" data-carousel="static">
-                {/* <!-- Carousel wrapper --> */}
-                <div className="overflow-hidden relative h-56 rounded-lg sm:h-64 xl:h-80 2xl:h-96">
-                    {/* <!-- Item 1 --> */}
-                    <div className="duration-700 ease-in-out" data-carousel-item>
-                        <span className="absolute top-1/2 left-1/2 text-2xl font-semibold text-white -translate-x-1/2 -translate-y-1/2 sm:text-3xl dark:text-gray-800">First Slide</span>
-                        <div className="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2">
-                            <Image height={800} width={818} src="/img/comida1.jpg" alt="..." />
+            <Swiper spaceBetween={30}
+                centeredSlides={true}
+                autoplay={{
+                    delay: 3500,
+                    disableOnInteraction: false,
+                }} pagination={true} modules={[Pagination, Autoplay]} className="mySwiper">
+                <SwiperSlide className="IGLESIA bg-white w-full">
+                    <div className="md:flex relative w-full" style={{ height: '600px' }}>
+                        {/* <div className="md:flex relative"> */}
+                        <Image src="/img/backup/comidap3.jpg"
+                            // width={1800}
+                            // height={400}
+                            alt='foto1'
+                            quality={100}
+                            layout='fill'
+                            objectFit="cover"
+                            objectPosition="center"
+                        />
+
+                        <div className="absolute top-72 md:top-64 text-white text-center uppercase  w-full mx-auto my-auto " >
+                            <h2 className="text-3xl md:text-6xl text-white" style={{ fontFamily: '"Yellowtail", cursive' }}>DELICIOSA COMIDA & BEBIDAS</h2>
+                            <p className="text-xl md:text-3xl font-sans">Encuentra lo que tu necesitas ahora</p>
+                            <button type="button" className="uppercase font-sans focus:outline-none text-white bg-amber-800 hover:bg-amber-600 focus:ring-4 focus:ring-yellow-300 font-medium rounded-lg text-xl px-5 py-2.5 mr-2 mt-2 dark:focus:ring-yellow-900">Comprar ahora!</button>
 
                         </div>
+
                     </div>
-                    {/* <!-- Item 2 --> */}
-                    <div className="hidden duration-700 ease-in-out" data-carousel-item>
-                        <Image height={150} width={900} src="/img/comida2.jpg" className="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="..." />
-                    </div>
-                    {/* <!-- Item 3 --> */}
-                    <div className="hidden duration-700 ease-in-out" data-carousel-item>
-                        <Image height={150} width={900} src="/img/comida3.jpg" className="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="..." />
+                </SwiperSlide>
+                <SwiperSlide className="IGLESIA  w-full bg-black">
+                    <div className="md:flex relative w-full  " style={{ height: '600px' }}>
+                        <Image src="/img/backup/jugop3.jpg"
+                            // width={1800}
+                            // height={600}
+                            alt='foto1'
+                            quality={100}
+                            layout='fill'
+                            objectFit="cover"
+                            objectPosition="center"
+                        />
+                        <div className="absolute top-72 md:top-64 text-white text-center uppercase  w-full mx-auto my-auto " >
+                            <h2 className="text-3xl md:text-6xl text-white uppercase" style={{ fontFamily: '"Yellowtail", cursive' }}>Restaurante y Cafe</h2>
+                            <p className="text-xl md:text-3xl font-sans">Encuentra lo que tu necesitas ahora</p>
+                            <button type="button" className="uppercase font-sans focus:outline-none text-white bg-amber-800 hover:bg-amber-600 focus:ring-4 focus:ring-yellow-300 font-medium rounded-lg text-xl px-5 py-2.5 mr-2 mt-2 dark:focus:ring-yellow-900">Comprar ahora!</button>
+
+                        </div>
+                    </div></SwiperSlide>
+                <SwiperSlide><div className="md:flex relative w-full" style={{ height: '600px' }}>
+                    <Image src="/img/backup/restaurantep.jpg"
+                        // width={500}
+                        // height={300}
+                        alt='foto1'
+                        quality={100}
+                        layout='fill'
+                        objectFit="cover"
+                        objectPosition="center"
+                    />
+                    <div className="absolute top-72 md:top-64 text-white text-center uppercase  w-full mx-auto my-auto " >
+                        <h2 className="text-3xl md:text-6xl text-white uppercase" style={{ fontFamily: '"Yellowtail", cursive' }}>Excelcente y Rapido Servicio</h2>
+                        <p className="text-xl md:text-3xl font-sans">Encuentra lo que tu necesitas ahora</p>
+                        <button type="button" className="uppercase font-sans focus:outline-none text-white bg-amber-800 hover:bg-amber-600 focus:ring-4 focus:ring-yellow-300 font-medium rounded-lg text-xl px-5 py-2.5 mr-2 mt-2 dark:focus:ring-yellow-900">Comprar ahora!</button>
+
                     </div>
                 </div>
-                {/* <!-- Slider indicators --> */}
-                <div className="flex absolute bottom-5 left-1/2 z-30 space-x-3 -translate-x-1/2">
-                    <button type="button" className="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 1" data-carousel-slide-to="0"></button>
-                    <button type="button" className="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
-                    <button type="button" className="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
-                </div>
-                {/* <!-- Slider controls --> */}
-                <button type="button" className="flex absolute top-0 left-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none" data-carousel-prev>
-                    <span className="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                        <svg className="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
-                        <span className="hidden">Previous</span>
-                    </span>
-                </button>
-                <button type="button" className="flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none" data-carousel-next>
-                    <span className="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                        <svg className="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
-                        <span className="hidden">Next</span>
-                    </span>
-                </button>
-            </div>
+                </SwiperSlide>
+            </Swiper>
         </>
     )
 }
