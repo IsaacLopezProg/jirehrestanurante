@@ -7,6 +7,7 @@ import Menu from './Menu';
 import Ubicacion from './Ubicacion';
 import Galeria from './Galeria';
 import Contacto from './Contacto';
+import Cheff from './Cheff';
 
 export default function index() {
     return (
@@ -17,6 +18,7 @@ export default function index() {
             <Menu />
             <Galeria />
             <Contacto />
+            <Cheff />
             <Ubicacion />
         </>
     )

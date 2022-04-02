@@ -1,36 +1,61 @@
 export const photos = [
+
     {
-        src: "/img/comida1.jpg",
+        src: "/img/galeria/comida4.jpeg",
         width: 4,
         height: 3
     },
     {
-        src: "/img/comida4.jpg",
-        width: 1,
-        height: 1
-    },
-    {
-        src: "/img/jugo3.jpg",
+        src: "/img/galeria/jugo3.jpeg",
         width: 4,
         height: 3
     },
     {
-        src: "/img/jugo2.jpg",
+        src: "/img/galeria/jugo2.jpeg",
         width: 4,
         height: 3
     },
     {
-        src: "/img/jugo4.jpg",
+        src: "/img/galeria/jugo4.jpeg",
         width: 4,
         height: 3
     },
     {
-        src: "/img/jugo5.jpg",
+        src: "/img/galeria/comida8.jpeg",
         width: 4,
         height: 3
     },
     {
-        src: "/img/jugo6.jpg",
+        src: "/img/galeria/comida12.jpeg",
+        width: 4,
+        height: 3
+    },
+    {
+        src: "/img/galeria/comida9.jpeg",
+        width: 4,
+        height: 3
+    },
+    {
+        src: "/img/galeria/comida14.jpeg",
+        width: 4,
+        height: 3
+    }, {
+        src: "/img/galeria/comida3.jpeg",
+        width: 4,
+        height: 3
+    },
+    {
+        src: "/img/galeria/comida5.jpeg",
+        width: 4,
+        height: 3
+    },
+    {
+        src: "/img/galeria/comida6.jpeg",
+        width: 4,
+        height: 3
+    },
+    {
+        src: "/img/galeria/comida7.jpeg",
         width: 4,
         height: 3
     },

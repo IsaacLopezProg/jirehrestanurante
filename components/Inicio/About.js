@@ -13,11 +13,11 @@ export default function About() {
                 </div>
             </div>
 
-            <div className="md:flex md:col bg-amber-800">
+            {/* <div className="md:flex md:col bg-amber-800"> */}
 
 
-                {/* ITEM 1 */}
-                <div className="md:flex md:row max-w-4xl mt-8">
+            {/* ITEM 1 */}
+            {/* <div className="md:flex md:row max-w-4xl mt-8">
                     <div className="FOTO md:basis-1/2 mt-8">
                         <div className="mx-12 mb-8  pt-4">
                             <Image className="border rounded-full" height={700} width={650} src="/img/acerca/hombre2.jpg" alt="hombre" />
@@ -28,14 +28,14 @@ export default function About() {
                             <h4 className=" font-bold text-2xl text-white">
                                 Historia
                             </h4>
-                            <p className=" text-normal font-light text-slate-400 mt-4">Occaecat ullamco anim est anim.Labore laboris ipsum dolor amet minim. Ipsum do qui officia occaecat quis.Adipisicing irure quis dolore ut deserunt commodo.</p>
-                            {/* <h4 className=" font-bold text-2xl mt-8 text-white">Vision</h4>
+                            <p className=" text-normal font-light text-slate-400 mt-4">Occaecat ullamco anim est anim.Labore laboris ipsum dolor amet minim. Ipsum do qui officia occaecat quis.Adipisicing irure quis dolore ut deserunt commodo.</p> */}
+            {/* <h4 className=" font-bold text-2xl mt-8 text-white">Vision</h4>
                             <p className=" text-normal font-light text-slate-400 mt-4">Duis ipsum ullamco occaecat cillum laboris incididunt laboris enim ad eu ut id sint. Culpa in nostrud qui deserunt ea laborum reprehenderit amet. Occaecat exercitation voluptate elit qui.</p> */}
-                        </div>
+            {/* </div>
                     </div>
-                </div>
-                {/* ITEM 2 */}
-                <div className="md:flex md:row max-w-4xl mt-8">
+                </div> */}
+            {/* ITEM 2 */}
+            {/* <div className="md:flex md:row max-w-4xl mt-8">
                     <div className="FOTO md:basis-1/2 mt-8">
                         <div className="mx-12 mb-8  pt-4 rounded-lg">
                             <Image height={700} width={650} src="/img/acerca/hombre2.jpg" alt="hombre" />
@@ -52,7 +52,7 @@ export default function About() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
 
 
             {/* <a href="#" class="flex flex-col items-center bg-white rounded-lg border shadow-md md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
@@ -65,7 +65,7 @@ export default function About() {
                 </div>
             </a> */}
 
-            <div className=" bg-amber-800">
+            <div className=" ">
 
 
                 {/* ITEM 1 */}
@@ -87,25 +87,29 @@ export default function About() {
                     </div>
                 </div> */}
                 {/* ITEM 2 */}
-                <div className="md:flex md:row max-w-max mt-8">
-                    <div className="FOTO md:basis-1/4 mt-8">
-                        <div className="mx-12 mb-8  pt-4 rounded-lg">
-                            <Image height={700} width={650} src="/img/acerca/hombre2.jpg" alt="hombre" />
+                <div className="md:flex md:row max-w-max mt-8 bg-amber-800 md:bg-white">
+                    <div className="FOTO md:basis-1/4 mt-8 bg-amber-800 mx-4">
+                        <div className="mx-12 mb-8 pt-8 rounded-lg bg-amber-800">
+                            <Image height={750} width={650} src="/img/acerca/mujer3.jpg" alt="hombre" />
                         </div>
                     </div>
-                    <div className="TEXTO md:basis-2/4 mt-8 mx-8">
-                        <div className=" text-center mt-14">
-                            <h4 className=" font-bold text-2xl text-white">
+                    <div className="TEXTO mt-8 md:basis-2/4  mx-8 flex justify-center items-center bg-amber-800">
+                        <div className=" text-center max-w-2xl justify-center ">
+                            <h4 className=" font-bold text-3xl mt-8 text-white font-sans">
                                 Historia
                             </h4>
-                            <p className=" text-normal font-light text-slate-400 mt-4">Occaecat ullamco anim est anim.Labore laboris ipsum dolor amet minim.</p>
-                            <h4 className=" font-bold text-2xl mt-8 text-white">Vision</h4>
-                            <p className=" text-normal font-light text-slate-400 mt-4">Aliqua commodo in sint nostrud exercitation anim consequat laborum est. Enim nisi proident exercitation aute elit velit occaecat irure anim. Ad do elit dolor Lorem minim ad elit. Ut exercitation sit mollit fugiat exercitation dolor consectetur magna aute. Minim commodo commodo incididunt officia ad et aliqua enim exercitation deserunt. Sunt aliqua velit quis mollit consectetur minim cupidatat. </p>
+                            <p className=" text-xl font-light text-white mt-4">Fundador Yahaira Burgos De Vicente
+                                18 Junio 2022.</p>
+                            <h4 className=" font-bold text-3xl mt-8 text-white font-sans">Vision</h4>
+                            <p className=" text-xl font-light text-white mt-4">Una Empresa familiar dedicada a servir a nuestra comunidad.
+
+                                <br />
+                                Cubriendo las necesidades alimenticias y nutricionales con nuestra gamma de servicios y gran variedad de comidas saludables.</p>
                         </div>
                     </div>
-                    <div className="FOTO md:basis-1/4 mt-8">
-                        <div className="mx-12 mb-8  pt-4 rounded-lg">
-                            <Image height={700} width={650} src="/img/acerca/hombre2.jpg" alt="hombre" />
+                    <div className="FOTO md:basis-1/4 mt-8 bg-amber-800 mx-4">
+                        <div className="mx-12 pt-8 md:mb-8 md:pb-0 pb-4 rounded-lg">
+                            <Image height={750} width={650} src="/img/home3.jpeg" alt="hombre" />
                         </div>
                     </div>
                 </div>
