@@ -20,24 +20,24 @@ export default function About() {
                 <div className="md:flex md:row max-w-4xl mt-8">
                     <div className="FOTO md:basis-1/2 mt-8">
                         <div className="mx-12 mb-8  pt-4">
-                            <Image height={700} width={650} src="/img/acerca/hombre2.jpg" alt="hombre" />
+                            <Image className="border rounded-full" height={700} width={650} src="/img/acerca/hombre2.jpg" alt="hombre" />
                         </div>
                     </div>
-                    <div className="TEXTO md:basis-1/2 mt-8 mx-8">
+                    <div className="TEXTO md:basis-1/2 mt-36 mx-8 ">
                         <div className="md:text-left text-center mt-4">
                             <h4 className=" font-bold text-2xl text-white">
                                 Historia
                             </h4>
-                            <p className=" text-normal font-light text-slate-400 mt-4">Occaecat ullamco anim est anim.Labore laboris ipsum dolor amet minim.</p>
-                            <h4 className=" font-bold text-2xl mt-8 text-white">Vision</h4>
-                            <p className=" text-normal font-light text-slate-400 mt-4">Duis ipsum ullamco occaecat cillum laboris incididunt laboris enim ad eu ut id sint. Culpa in nostrud qui deserunt ea laborum reprehenderit amet. Occaecat exercitation voluptate elit qui.</p>
+                            <p className=" text-normal font-light text-slate-400 mt-4">Occaecat ullamco anim est anim.Labore laboris ipsum dolor amet minim. Ipsum do qui officia occaecat quis.Adipisicing irure quis dolore ut deserunt commodo.</p>
+                            {/* <h4 className=" font-bold text-2xl mt-8 text-white">Vision</h4>
+                            <p className=" text-normal font-light text-slate-400 mt-4">Duis ipsum ullamco occaecat cillum laboris incididunt laboris enim ad eu ut id sint. Culpa in nostrud qui deserunt ea laborum reprehenderit amet. Occaecat exercitation voluptate elit qui.</p> */}
                         </div>
                     </div>
                 </div>
                 {/* ITEM 2 */}
                 <div className="md:flex md:row max-w-4xl mt-8">
                     <div className="FOTO md:basis-1/2 mt-8">
-                        <div className="mx-12 mb-8  pt-4">
+                        <div className="mx-12 mb-8  pt-4 rounded-lg">
                             <Image height={700} width={650} src="/img/acerca/hombre2.jpg" alt="hombre" />
                         </div>
                     </div>
@@ -53,6 +53,64 @@ export default function About() {
                     </div>
                 </div>
             </div>
+
+
+            {/* <a href="#" class="flex flex-col items-center bg-white rounded-lg border shadow-md md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                <div class="object-cover w-full h-96 rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-l-lg" src="/docs/images/blog/image-4.jpg" alt="">
+                    <Image height={700} width={650} src="/img/acerca/hombre2.jpg" alt="hombre" />
+                </div>
+                <div class="flex flex-col justify-between p-4 leading-normal">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
+                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                </div>
+            </a> */}
+
+            <div className=" bg-amber-800">
+
+
+                {/* ITEM 1 */}
+                {/* <div className="md:flex md:row max-w-4xl mt-8">
+                    <div className="FOTO md:basis-1/2 mt-8">
+                        <div className="mx-12 mb-8  pt-4">
+                            <Image className="border rounded-full" height={700} width={650} src="/img/acerca/hombre2.jpg" alt="hombre" />
+                        </div>
+                    </div>
+                    <div className="TEXTO md:basis-1/2 mt-36 mx-8 ">
+                        <div className="md:text-left text-center mt-4">
+                            <h4 className=" font-bold text-2xl text-white">
+                                Historia
+                            </h4>
+                            <p className=" text-normal font-light text-slate-400 mt-4">Occaecat ullamco anim est anim.Labore laboris ipsum dolor amet minim. Ipsum do qui officia occaecat quis.Adipisicing irure quis dolore ut deserunt commodo.</p>
+                            <h4 className=" font-bold text-2xl mt-8 text-white">Vision</h4>
+                        <p className=" text-normal font-light text-slate-400 mt-4">Duis ipsum ullamco occaecat cillum laboris incididunt laboris enim ad eu ut id sint. Culpa in nostrud qui deserunt ea laborum reprehenderit amet. Occaecat exercitation voluptate elit qui.</p>
+                        </div>
+                    </div>
+                </div> */}
+                {/* ITEM 2 */}
+                <div className="md:flex md:row max-w-max mt-8">
+                    <div className="FOTO md:basis-1/4 mt-8">
+                        <div className="mx-12 mb-8  pt-4 rounded-lg">
+                            <Image height={700} width={650} src="/img/acerca/hombre2.jpg" alt="hombre" />
+                        </div>
+                    </div>
+                    <div className="TEXTO md:basis-2/4 mt-8 mx-8">
+                        <div className=" text-center mt-14">
+                            <h4 className=" font-bold text-2xl text-white">
+                                Historia
+                            </h4>
+                            <p className=" text-normal font-light text-slate-400 mt-4">Occaecat ullamco anim est anim.Labore laboris ipsum dolor amet minim.</p>
+                            <h4 className=" font-bold text-2xl mt-8 text-white">Vision</h4>
+                            <p className=" text-normal font-light text-slate-400 mt-4">Aliqua commodo in sint nostrud exercitation anim consequat laborum est. Enim nisi proident exercitation aute elit velit occaecat irure anim. Ad do elit dolor Lorem minim ad elit. Ut exercitation sit mollit fugiat exercitation dolor consectetur magna aute. Minim commodo commodo incididunt officia ad et aliqua enim exercitation deserunt. Sunt aliqua velit quis mollit consectetur minim cupidatat. </p>
+                        </div>
+                    </div>
+                    <div className="FOTO md:basis-1/4 mt-8">
+                        <div className="mx-12 mb-8  pt-4 rounded-lg">
+                            <Image height={700} width={650} src="/img/acerca/hombre2.jpg" alt="hombre" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </>
     )
 }

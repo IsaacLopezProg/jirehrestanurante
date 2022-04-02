@@ -13,6 +13,8 @@
     "next": "12.1.0",
     "react": "17.0.0",
     "react-dom": "17.0.0",
+    "react-photo-gallery": "^8.0.0",
+    "react-responsive-carousel": "^3.2.23",
     "semantic-ui-css": "^2.4.1",
     "semantic-ui-react": "^2.1.2",
     "swiper": "^8.0.7",
