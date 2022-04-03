@@ -37,7 +37,7 @@ export default function Cheff() {
                                     Especialista en comida hispana, criolla, venezolana y española.
                                 </p>
                             </div>
-                            <div class="pt-8 flex border-t border-gray-200 w-40 mx-auto text-gray-400 items-center justify-between">
+                            {/* <div class="pt-8 flex border-t border-gray-200 w-40 mx-auto text-gray-400 items-center justify-between">
                                 <a href="#">
                                     <svg width="30" height="30" fill="currentColor" class="text-xl hover:text-gray-800 dark:hover:text-white transition-colors duration-200" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M1343 12v264h-157q-86 0-116 36t-30 108v189h293l-39 296h-254v759h-306v-759h-255v-296h255v-218q0-186 104-288.5t277-102.5q147 0 228 12z">
@@ -68,7 +68,7 @@ export default function Cheff() {
                                         </path>
                                     </svg>
                                 </a>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                     {/* <div class="p-4 relative">
