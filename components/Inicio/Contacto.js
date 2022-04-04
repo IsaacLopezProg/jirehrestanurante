@@ -2,6 +2,47 @@ import React from 'react';
 import Image from 'next/image';
 
 export default function Contacto() {
+
+
+    const horario = [
+        {
+            dia: 'Lunes',
+            horao: '7:00 a.m',
+            horac: '6:00 p.m'
+        },
+        {
+            dia: 'Martes',
+            horao: '7:00 a.m',
+            horac: '6:00 p.m'
+        },
+        {
+            dia: 'Miercoles',
+            horao: '7:00 a.m',
+            horac: '6:00 p.m'
+        },
+        {
+            dia: 'Jueves',
+            horao: '7:00 a.m',
+            horac: '6:00 p.m'
+        },
+        {
+            dia: 'Viernes',
+            horao: '7:00 a.m',
+            horac: '6:00 p.m'
+        },
+        {
+            dia: 'Sabado',
+            horao: '7:00 a.m',
+            horac: '6:00 p.m'
+        },
+    ]
+
+    // const redes = [
+
+    // ]
+
+    let ejemplo = 'bg-black'
+
     return (
         <>
             <div className="mt-36">
@@ -16,65 +57,34 @@ export default function Contacto() {
             <div className="flex flex-col bg-amber-800  p-12">
                 {/* HORARIO */}
                 <div className="text-white text-center">
-                    <h3 className="my-4 text-3xl font-bold">
+                    <h3 className="my-4  text-xl md:text-3xl font-bold">
                         Horario.
                     </h3>
-                    {/* <Image height={40} width={450} src="/img/divider/divider3.png" alt="divider" /> */}
-                    <p className="mt-4 text-xl">
+                    <p className="mt-4 text-sm md:text-xl">
                         Estamos abiertos toda la semana de lunes a sabado en horario corrido. Domingos no laboramos.
                     </p>
                 </div>
                 <div className="PADRE md:flex md:flex-row ">
-                    <div className="HORARIO mt-8">
-                        <div className="p-8 text-center bg-white text-amber-800 hover:text-white hover:bg-amber-600 m-4">
-                            <h4 className="font-bold  my-4 text-2xl">Lunes</h4>
-                            <p className=" font-bold text-xl mt-4">7:00 a.m - 6:00 p.m </p>
-                        </div>
-                    </div>
-                    <div className="HORARIO mt-8">
-                        <div className="p-8 text-center bg-white text-amber-800 hover:text-white hover:bg-amber-600 m-4">
-                            <h4 className="font-bold  my-4 text-2xl">Martes</h4>
-                            <p className=" font-bold text-xl mt-4">7:00 a.m - 6:00 p.m </p>
-                        </div>
-                    </div>
-                    <div className="HORARIO mt-8">
-                        <div className="p-8 text-center bg-white text-amber-800 hover:text-white hover:bg-amber-600 m-4">
-                            <h4 className="font-bold  my-4 text-2xl">Miercoles</h4>
-                            <p className=" font-bold text-xl mt-4">7:00 a.m - 6:00 p.m </p>
-                        </div>
-                    </div>
-                    <div className="HORARIO mt-8">
-                        <div className="p-8 text-center bg-white text-amber-800 hover:text-white hover:bg-amber-600 m-4">
-                            <h4 className="font-bold  my-4 text-2xl">Jueves</h4>
-                            <p className=" font-bold text-xl mt-4">7:00 a.m - 6:00 p.m </p>
-                        </div>
-                    </div>
-                    <div className="HORARIO mt-8">
-                        <div className="p-8 text-center bg-white text-amber-800 hover:text-white hover:bg-amber-600 m-4">
-                            <h4 className="font-bold  my-4 text-2xl">Viernes</h4>
-                            <p className=" font-bold text-xl mt-4">7:00 a.m - 6:00 p.m </p>
-                        </div>
-                    </div>
-                    <div className="HORARIO mt-8">
-                        <div className="p-8 text-center bg-white text-amber-800 hover:text-white hover:bg-amber-600 m-4">
-                            <h4 className="font-bold  my-4 text-2xl">Sabado</h4>
-                            <p className=" font-bold text-xl mt-4">7:00 a.m - 6:00 p.m </p>
-                        </div>
-                    </div>
-
-
-
+                    {
+                        horario.map(h => (
+                            <div className="HORARIO mt-8">
+                                <div className="p-8 text-center bg-white text-amber-800 hover:text-white hover:bg-amber-600 m-4">
+                                    <h4 className="font-bold  my-4 text-lg  md:text-2xl">{h.dia}</h4>
+                                    <p className=" font-bold text-sm md:text-xl mt-4">{h.horao} - {h.horac} </p>
+                                </div>
+                            </div>
+                        ))
+                    }
                     <div></div>
 
                 </div>
                 {/* REDES */}
-                <div className="flex flex-col bg-amber-800  p-12">
+                <div className="flex flex-col bg-amber-800">
                     <div className="text-white text-center">
-                        <h3 className="my-4 text-3xl font-bold">
+                        <h3 className="my-4 text-xl md:text-3xl font-bold">
                             Informacion y Redes.
                         </h3>
-                        {/* <Image height={40} width={450} src="/img/divider/divider3.png" alt="divider" /> */}
-                        <p className="mt-4 text-xl">
+                        <p className="mt-4 text-sm md:text-xl">
                             Contactate con nosotros atravez de las diferentes plataformas de cominicacion.
                         </p>
                     </div>

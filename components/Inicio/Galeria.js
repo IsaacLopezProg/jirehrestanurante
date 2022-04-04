@@ -23,7 +23,7 @@ export default function Galeria() {
         <>
 
             <div className="mt-24">
-                <h3 className="text-center text-7xl font-yellow">
+                <h3 className="text-center text-6xl md:text-7xl font-yellow">
                     Galeria
                 </h3>
                 <div className="text-center">
@@ -37,7 +37,7 @@ export default function Galeria() {
                 onClose={() => setOpen(false)}
                 onOpen={() => setOpen(true)}
                 open={open}
-                size='big'
+                size='medium'
                 trigger={<Button size="big" fluid style={{ backgroundColor: '#92400e', color: 'white' }}>Ver Pantalla Completa</Button>}
             >
                 <Carousel showArrows={true} emulateTouch={true} autoPlay={true}>

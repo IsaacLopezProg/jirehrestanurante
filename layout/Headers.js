@@ -34,18 +34,35 @@ export default function Headers(props) {
                 vertical
                 visible={visible}
                 width='thin'
+                color='brown'
             >
                 <Menu.Item as='a'>
                     <Icon name='home' />
                     Home
                 </Menu.Item>
                 <Menu.Item as='a'>
-                    <Icon name='gamepad' />
-                    Games
+                    <Icon name='sign-in' />
+                    Log In
                 </Menu.Item>
                 <Menu.Item as='a'>
-                    <Icon name='camera' />
-                    Channels
+                    <Icon name='sign-out' />
+                    Log Out
+                </Menu.Item>
+                <Menu.Item as='a'>
+                    <Icon name='favorite' />
+                    Favoritos
+                </Menu.Item>
+                <Menu.Item as='a'>
+                    <Icon name='list' />
+                    Menu
+                </Menu.Item>
+                <Menu.Item as='a'>
+                    <Icon name='cart' />
+                    Carrito
+                </Menu.Item>
+                <Menu.Item as='a'>
+                    <Icon name='shipping fast' />
+                    Pedidos
                 </Menu.Item>
             </Sidebar>
 
@@ -56,9 +73,13 @@ export default function Headers(props) {
                     <div className="container flex flex-wrap justify-between items-center mx-auto my-4 ">
                         <a href="https://flowbite.com" className="flex items-center">
                             <Image height={104} width={124} src="/logo.jpeg" className="mr-3 h-6 sm:h-9" alt="Flowbite Logo" />
-                            <span className="self-center text-5xl font-semibold whitespace-nowrap text-white ml-2" style={{ fontFamily: '"Yellowtail", cursive' }}>Jireh Tropical <br /><p className="font-ligth text-xl ml-8 font-sans">Smoothie  and Gril</p></span>
+                            <span className="self-center text-4xl md:text-5xl font-semibold whitespace-nowrap text-white ml-2" style={{ fontFamily: '"Yellowtail", cursive' }}>
+                                Jireh Tropical
+                                <br />
+                                <p className="font-ligth text-lg ml-8 font-sans">Smoothie  and Gril</p>
+                            </span>
                         </a>
-                        <button onClick={() => prueba()} data-collapse-toggle="mobile-menu" type="button" className="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="mobile-menu" aria-expanded="false">
+                        <button onClick={() => prueba()} data-collapse-toggle="mobile-menu" type="button" className="inline-flex items-center p-2 ml-3 text-4xl text-white rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="mobile-menu" aria-expanded="false">
                             {/* <Checkbox
                                             checked={visible}
                                             onChange={(e, data) => setVisible(data.checked)}

@@ -5,7 +5,7 @@ export default function About() {
     return (
         <>
             <div className="mt-24">
-                <h3 className="text-center text-7xl font-yellow">
+                <h3 className="text-center text-6xl md:text-7xl font-yellow">
                     Acerca de
                 </h3>
                 <div className="text-center">
@@ -95,13 +95,13 @@ export default function About() {
                     </div>
                     <div className="TEXTO mt-8 md:basis-2/4  mx-8 flex justify-center items-center bg-amber-800">
                         <div className=" text-center max-w-2xl justify-center ">
-                            <h4 className=" font-bold text-3xl mt-8 text-white font-sans">
+                            <h4 className=" font-bold text-xl md:text-3xl mt-8 text-white font-sans">
                                 Historia
                             </h4>
-                            <p className=" text-xl font-light text-white mt-4">Fundador Yahaira Burgos De Vicente
+                            <p className="text-xs md:text-xl  font-light text-white mt-4">Fundadora Yahaira Burgos De Vicente
                                 18 Junio 2022.</p>
-                            <h4 className=" font-bold text-3xl mt-8 text-white font-sans">Vision</h4>
-                            <p className=" text-xl font-light text-white mt-4">Una Empresa familiar dedicada a servir a nuestra comunidad.
+                            <h4 className=" font-bold text-xl md:text-3xl mt-8 text-white font-sans">Vision</h4>
+                            <p className="text-xs md:text-xl font-light text-white mt-4">Una Empresa familiar dedicada a servir a nuestra comunidad.
 
                                 <br />
                                 Cubriendo las necesidades alimenticias y nutricionales con nuestra gamma de servicios y gran variedad de comidas saludables.</p>

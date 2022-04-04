@@ -13,7 +13,7 @@ export default function Ubicacion() {
             <div className="CONTAIN mt-36">
                 <div className="flex flex-col mx-auto ">
                     <div className="TITULO basis-full text-center my-8">
-                        <h1 className="text-5xl uppercase font-bold mt-8 font-yellow">
+                        <h1 className="text-4xl md:text-5xl uppercase font-bold mt-8 font-yellow">
                             Nuestra Ubicacion
                         </h1>
                         <Image height={80} width={450} src="/img/divider/divider.png" alt="divider" />

@@ -6,7 +6,7 @@ export default function Cheff() {
         <>
 
             <div className="mt-24">
-                <h3 className="text-center text-7xl font-yellow">
+                <h3 className="text-center text-6xl md:text-7xl font-yellow">
                     Nuestro Cheff
                 </h3>
                 <div className="text-center">
@@ -27,13 +27,13 @@ export default function Cheff() {
                         </div>
                         <div class="bg-amber-800 rounded-lg shadow px-8 py-4 pt-24">
                             <div class="text-center">
-                                <p class="text-2xl first-line:text-white">
+                                <p class="text-xl md:text-2xl first-line:text-white">
                                     Joseph
                                 </p>
-                                <p class="text-xl text-gray-200 font-light">
+                                <p class="text-lg md:text-xl text-gray-200 font-light">
                                     Guzman
                                 </p>
-                                <p class="text-lg  w-60 text-gray-200 mx-auto py-4 font-light">
+                                <p class="text-base md:text-lg  w-60 text-gray-200 mx-auto py-4 font-light">
                                     Especialista en comida hispana, criolla, venezolana y española.
                                 </p>
                             </div>

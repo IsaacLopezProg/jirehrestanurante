@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState } from 'react';
 import { Tab } from '@headlessui/react';
 import Image from 'next/image';
 
@@ -7,7 +7,7 @@ function classNames(...classes) {
 }
 
 export default function Menu() {
-    let [categories] = useState({
+    let [categorias] = useState({
         Desayuno: [
             {
                 id: 1,
@@ -188,7 +188,7 @@ export default function Menu() {
         <>
 
             <div className="mt-36">
-                <h3 className="text-center text-7xl font-yellow">
+                <h3 className="text-center text-6xl md:text-7xl font-yellow">
                     Nuestro Menu
                 </h3>
                 <div className="text-center">
@@ -198,7 +198,7 @@ export default function Menu() {
             <div className="w-full px-2 py-16 sm:px-0">
                 <Tab.Group>
                     <Tab.List className="flex p-1 space-x-1  bg-amber-800 rounded-xl">
-                        {Object.keys(categories).map((category) => (
+                        {Object.keys(categorias).map((category) => (
                             <Tab
                                 key={category}
                                 className={({ selected }) =>
@@ -216,7 +216,7 @@ export default function Menu() {
                         ))}
                     </Tab.List>
                     <Tab.Panels className="mt-2">
-                        {Object.values(categories).map((posts, idx) => (
+                        {Object.values(categorias).map((posts, idx) => (
                             <Tab.Panel
                                 key={idx}
                                 className={classNames(
@@ -231,10 +231,10 @@ export default function Menu() {
                                         >
                                             <div className="flex justify-between lg:mx-80 md:mx-36">
                                                 <div className="">
-                                                    <h3 className="text-3xl text-amber-800 font-extrabold font-yellow leading-9">
+                                                    <h3 className="text-2xl md:text-3xl text-amber-800 font-extrabold font-yellow leading-9">
                                                         {post.title}
                                                     </h3>
-                                                    <ul className="md:flex mt-4 max-w-sm ml-8 space-x-1 text-xl font-sans font-medium leading-4 text-coolGray-500 block">
+                                                    <ul className="md:flex mt-4 max-w-sm ml-8 space-x-1 text-sm md:text-xl font-sans font-medium leading-4 text-coolGray-500 block">
                                                         {/* <li>&middot;</li> */}
                                                         {/* <li>&middot;</li> */}
                                                         {
@@ -314,7 +314,7 @@ export default function Menu() {
                                                     </ul>
                                                 </div>
                                                 <div>
-                                                    <p className="text-xl">
+                                                    <p className="text-base md:text-xl mr-1">
                                                         <span className="text-amber-800 mr-2">$</span>{post.precio}
                                                     </p>
                                                 </div>
