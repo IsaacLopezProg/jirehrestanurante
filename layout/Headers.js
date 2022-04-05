@@ -1,9 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import {
-    Checkbox,
-    Grid,
-    Header,
     Icon,
     Menu,
     Segment,
@@ -12,19 +9,34 @@ import {
 
 export default function Headers(props) {
 
+    // IDIOMA
+    const [idioma, setIdioma] = useState('');
 
+    useEffect(() => {
+
+        if (navigator.language) {
+            const lang = (navigator.language).slice(0, 2);
+            setIdioma(lang);
+        }
+
+
+    }, [])
+
+
+    // SIDE
     const test = true;
 
     const [visible, setVisible] = useState(false);
 
     function prueba() {
         setVisible(true);
-
     }
 
 
     return (<>
-        <Sidebar.Pushable as={Segment} style={{ border: "0", borderRadius: "0" }}>
+
+
+        <Sidebar.Pushable as={Segment} style={{ border: "0", borderRadius: "0" }} lang="es">
             <Sidebar
                 as={Menu}
                 animation='overlay'
@@ -38,19 +50,19 @@ export default function Headers(props) {
             >
                 <Menu.Item as='a'>
                     <Icon name='home' />
-                    Home
+                    {idioma === 'es' ? 'Inicio' : 'Home'}
                 </Menu.Item>
                 <Menu.Item as='a'>
                     <Icon name='sign-in' />
-                    Log In
+                    {idioma === 'es' ? 'Iniciar Sesion' : 'Log In'}
                 </Menu.Item>
                 <Menu.Item as='a'>
                     <Icon name='sign-out' />
-                    Log Out
+                    {idioma === 'es' ? 'Iniciar Sesion' : 'Log Out'}
                 </Menu.Item>
                 <Menu.Item as='a'>
                     <Icon name='favorite' />
-                    Favoritos
+                    {idioma === 'es' ? 'Favoritos' : 'Favorite'}
                 </Menu.Item>
                 <Menu.Item as='a'>
                     <Icon name='list' />
@@ -58,11 +70,11 @@ export default function Headers(props) {
                 </Menu.Item>
                 <Menu.Item as='a'>
                     <Icon name='cart' />
-                    Carrito
+                    {idioma === 'es' ? 'Carrito' : 'Shopping Cart'}
                 </Menu.Item>
                 <Menu.Item as='a'>
                     <Icon name='shipping fast' />
-                    Pedidos
+                    {idioma === 'es' ? 'Pedidos' : 'Orders'}
                 </Menu.Item>
             </Sidebar>
 
@@ -95,10 +107,10 @@ export default function Headers(props) {
                         <div className="hidden w-full md:block md:w-auto" id="mobile-menu">
                             <ul className="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-lg md:font-medium mr-8">
                                 <li>
-                                    <a href="#" className="block py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-white md:p-0 dark:text-white" aria-current="page">Home</a>
+                                    <a href="#" className="block py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-white md:p-0 dark:text-white" aria-current="page">{idioma === 'es' ? 'Inicio' : 'Home'}</a>
                                 </li>
                                 <li>
-                                    <a href="#" className="block py-2 pr-4 pl-3  border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Log In</a>
+                                    <a href="#" className="block py-2 pr-4 pl-3  border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">{idioma === 'es' ? 'Iniciar Sesion' : 'Log In'}</a>
                                 </li>
                                 {test ?
                                     (
@@ -107,10 +119,10 @@ export default function Headers(props) {
                                                 <a href="#" className="block py-2 pr-4 pl-3  border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Menu</a>
                                             </li>
                                             <li>
-                                                <a href="#" className="block py-2 pr-4 pl-3  border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Carrito</a>
+                                                <a href="#" className="block py-2 pr-4 pl-3  border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">{idioma === 'es' ? 'Carrito' : 'Shpping Cart'}</a>
                                             </li>
                                             <li>
-                                                <a href="#" className="block py-2 pr-4 pl-3  hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Pedidos</a>
+                                                <a href="#" className="block py-2 pr-4 pl-3  hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">{idioma === 'es' ? 'Pedidos' : 'Orders'}</a>
                                             </li>
                                         </>
 
@@ -125,6 +137,9 @@ export default function Headers(props) {
                 {props.children}
             </Sidebar.Pusher>
         </Sidebar.Pushable>
+
+
+
 
 
 

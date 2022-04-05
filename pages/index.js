@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Headers from '../layout/Headers';
-import Inicio from '../components/Inicio/espanol';
+import Inicio from '../components/Inicio/Index';
 
 export default function index() {
 
@@ -10,27 +10,18 @@ export default function index() {
 
     if (navigator.language) {
       const lang = (navigator.language).slice(0, 2);
-      // console.log(lang);
       setIdioma(lang);
     }
 
-
   }, [])
-
-  console.log(idioma);
 
 
   return (
     <>
-      {
-        idioma === 'es' ?
-          <Headers>
-            <Inicio />
-          </Headers>
-          :
-          null
+      <Headers >
+        <Inicio idioma={idioma} />
+      </Headers>
 
-      }
 
     </>
   )
