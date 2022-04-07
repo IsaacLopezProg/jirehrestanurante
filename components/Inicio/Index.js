@@ -8,6 +8,7 @@ import Ubicacion from './Ubicacion';
 import Galeria from './Galeria';
 import Contacto from './Contacto';
 import Cheff from './Cheff';
+import Testimonios from './Testimonios';
 
 export default function index({ idioma }) {
     return (
@@ -19,6 +20,7 @@ export default function index({ idioma }) {
             <Galeria idioma={idioma} />
             <Contacto idioma={idioma} />
             <Cheff idioma={idioma} />
+            {/* <Testimonios idioma={idioma} /> */}
             <Ubicacion idioma={idioma} />
         </>
     )

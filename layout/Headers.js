@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import {
     Icon,
     Menu,
@@ -83,14 +84,17 @@ export default function Headers(props) {
                 {/* <Image src='/images/wireframe/paragraph.png' /> */}
                 <nav className="border-gray-200 px-4 sm:px-4 py-2.5 bg-amber-800 h-34">
                     <div className="container flex flex-wrap justify-between items-center mx-auto my-4 ">
-                        <a href="https://flowbite.com" className="flex items-center">
-                            <Image height={104} width={124} src="/logo.jpeg" className="mr-3 h-6 sm:h-9" alt="Flowbite Logo" />
-                            <span className="self-center text-4xl md:text-5xl font-semibold whitespace-nowrap text-white ml-2" style={{ fontFamily: '"Yellowtail", cursive' }}>
-                                Jireh Tropical
-                                <br />
-                                <p className="font-ligth text-lg ml-8 font-sans">Smoothie  and Gril</p>
-                            </span>
-                        </a>
+                        <Link href="/">
+                            <a className="flex items-center">
+
+                                <Image height={104} width={124} src="/logo.jpeg" className="mr-3 h-6 sm:h-9" alt="Flowbite Logo" />
+                                <span className="self-center text-4xl md:text-5xl font-semibold whitespace-nowrap text-white ml-2" style={{ fontFamily: '"Yellowtail", cursive' }}>
+                                    Jireh Tropical
+                                    <br />
+                                    <p className="font-ligth text-lg ml-8 font-sans">Smoothie  and Gril</p>
+                                </span>
+                            </a>
+                        </Link>
                         <button onClick={() => prueba()} data-collapse-toggle="mobile-menu" type="button" className="inline-flex items-center p-2 ml-3 text-4xl text-white rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="mobile-menu" aria-expanded="false">
                             {/* <Checkbox
                                             checked={visible}

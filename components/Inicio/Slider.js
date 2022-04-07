@@ -13,9 +13,9 @@ import "swiper/css/pagination";
 import { Pagination, Autoplay } from "swiper";
 
 // IMG
-import comida from "/public/img/slider/comida.webp";
-import jugo from "/public/img/slider/jugo.webp";
-import restaurante from "/public/img/slider/restaurante.webp";
+import comida from "/public/img/slider/comida.jpeg";
+import jugo from "/public/img/slider/jugo.jpeg";
+import restaurante from "/public/img/slider/restaurante.jpeg";
 
 
 export default function Slider({ idioma }) {

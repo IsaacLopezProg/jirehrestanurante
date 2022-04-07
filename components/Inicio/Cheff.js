@@ -22,19 +22,19 @@ export default function Cheff({ idioma }) {
                     <div class="p-4 relative">
                         <div class="text-center mb-4 absolute -top-16 right-1/2 transform translate-x-1/2">
                             <a href="#" class="block relative">
-                                <img alt="profil" src="/img/acerca/hombre.webp" class="mx-auto object-cover rounded-lg h-40 w-40  border-2 border-white dark:border-gray-800" />
+                                <img alt="profil" src="/img/acerca/hombre.jpeg" class="mx-auto object-cover rounded-lg h-40 w-40  border-2 border-white dark:border-gray-800" />
                             </a>
                         </div>
                         <div class="bg-amber-800 rounded-lg shadow px-8 py-4 pt-24">
                             <div class="text-center">
-                                <p class="text-xl md:text-2xl first-line:text-white">
+                                <p class="text-xl md:text-5xl first-line:text-white">
                                     Joseph
                                 </p>
-                                <p class="text-lg md:text-xl text-gray-200 font-light">
+                                <p class="text-lg md:text-3xl text-gray-200 font-light">
                                     Guzman
                                 </p>
                                 {idioma === 'es' ?
-                                    <p class="text-base md:text-lg  w-60 text-gray-200 mx-auto py-4 font-light">
+                                    <p class="text-base md:text-xl  w-60 text-gray-200 mx-auto py-4 font-light">
                                         Especialista en comida hispana, criolla, venezolana y española.
                                     </p>
                                     :

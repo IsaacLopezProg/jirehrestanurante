@@ -2,10 +2,10 @@ import React from 'react';
 import Image from 'next/image';
 
 // IMG
-import deliver from '/public/img/servicios/delive.webp';
-import criolla from '/public/img/servicios/criolla.webp';
+import deliver from '/public/img/servicios/delive.jpeg';
+import criolla from '/public/img/servicios/criolla.jpeg';
 import drive from '/public/img/servicios/drive.jpeg';
-import comida from '/public/img/servicios/comida.webp'
+import comida from '/public/img/servicios/comida.jpeg';
 
 export default function Servicios({ idioma }) {
 

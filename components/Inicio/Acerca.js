@@ -91,7 +91,8 @@ export default function About({ idioma }) {
                 <div className="md:flex md:row max-w-max mt-8 bg-amber-800 md:bg-white">
                     <div className="FOTO md:basis-1/4 mt-8 bg-amber-800 mx-4">
                         <div className="mx-12 mb-8 pt-8 rounded-lg bg-amber-800">
-                            <Image height={750} width={650} src="/img/acerca/mujer.webp" alt="hombre" />
+                            {/* <div className="mx-12 mb-8 pt-8 rounded-lg bg-amber-800" style={{ height: '326.25px', width: '282.75px' }}> */}
+                            <Image height={750} width={650} src="/img/acerca/mujer.jpeg" alt="hombre" />
                         </div>
                     </div>
                     <div className="TEXTO mt-8 md:basis-2/4  mx-8 flex justify-center items-center bg-amber-800">
@@ -99,7 +100,7 @@ export default function About({ idioma }) {
                             <h4 className=" font-bold text-xl md:text-3xl mt-8 text-white font-sans">
                                 {idioma === 'es' ? 'Historia' : 'History'}
                             </h4>
-                            <p className="text-xs md:text-xl  font-light text-white mt-4">{idioma === 'es' ? 'Fundadora Yahaira Burgos De Vicente' : 'Founder Yahaira Burgos De Vicente'}
+                            <p className="text-xs md:text-xl  font-light text-white mt-4">{idioma === 'es' ? 'Establecido por Yahaira Burgos De Vicente' : 'Set by Yahaira Burgos De Vicente'}
                                 18 Junio 2022.</p>
                             <h4 className=" font-bold text-xl md:text-3xl mt-8 text-white font-sans">Vision</h4>
                             {idioma === 'es' ?
