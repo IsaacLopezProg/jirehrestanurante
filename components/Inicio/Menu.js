@@ -125,6 +125,12 @@ export default function Menu({ idioma }) {
                 ingrediente4: 'Malta',
                 ingrediente5: 'Agua'
             },
+            {
+                id: 5,
+                title: 'Aviso',
+                precio: 'Gracias',
+                ingrediente1: 'Somos cristianos no vendemos alcohol, mojitos, o vinos.',
+            },
         ],
         Comida: [
             {
@@ -293,6 +299,12 @@ export default function Menu({ idioma }) {
                 ingrediente3: 'Coconut Water',
                 ingrediente4: 'Malta',
                 ingrediente5: 'Agua'
+            },
+            {
+                id: 5,
+                title: 'Advice',
+                precio: 'Thanks',
+                ingrediente1: 'We are Christians we do not sell alcohol, mojitos, or wines.',
             },
         ],
         Lunch: [
