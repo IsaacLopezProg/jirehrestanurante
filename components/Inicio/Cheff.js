@@ -22,7 +22,7 @@ export default function Cheff({ idioma }) {
                     <div class="p-4 relative">
                         <div class="text-center mb-4 absolute -top-16 right-1/2 transform translate-x-1/2">
                             <a href="#" class="block relative">
-                                <img alt="profil" src="/img/acerca/hombre.jpeg" class="mx-auto object-cover rounded-lg h-40 w-40  border-2 border-white dark:border-gray-800" />
+                                <img alt="profil" src="https://via.placeholder.com/150" class="mx-auto object-cover rounded-lg h-40 w-40  border-2 border-white dark:border-gray-800" />
                             </a>
                         </div>
                         <div class="bg-amber-800 rounded-lg shadow px-8 py-4 pt-24">
