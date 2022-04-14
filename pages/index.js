@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Headers from '../layout/Headers';
 import Inicio from '../components/Inicio/Index';
+import Footer from '../layout/Footer';
 
 export default function index() {
 
@@ -21,6 +22,7 @@ export default function index() {
       <Headers >
         <Inicio idioma={idioma} />
       </Headers>
+      <Footer />
 
 
     </>

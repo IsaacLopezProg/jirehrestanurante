@@ -141,14 +141,35 @@ export default function Contacto({ idioma }) {
                         <div className="REDES mt-8">
                             <div className="p-8 text-center bg-white text-amber-800 hover:bg-amber-600 m-4 hover:text-white">
                                 <h4 className="font-bold  my-4 text-2xl ">{idioma === 'es' ? 'Redes' : 'Social Media'}</h4>
-                                <a href="https://www.instagram.com/jirehtropicalsmoothie/" type="button" className="hidden text-white bg-purple-800 hover:text-purple-800 hover:bg-white font-medium rounded-lg text-xl px-5 py-2.5 text-center md:inline-flex items-center  mr-2 mb-2">
-                                    <img className="mr-4 h-14 w-14" src="/img/icon/instagram.png" />
-                                    jirehtropicalsmoothie
-                                </a>
-                                <a href="https://www.instagram.com/jirehtropicalsmoothie/" type="button" className="md:hidden text-white bg-purple-800 hover:text-purple-800 hover:bg-white font-medium rounded-lg text-xl md:px-5 px-2 py-2.5 text-center inline-flex items-center  mr-2 mb-2">
-                                    <img className="mr-4 h-14 w-14" src="/img/icon/instagram.png" />
-                                    INSTAGRAM
-                                </a>
+                                <div className="flex flex-col">
+                                    {/* INSTAGRAM */}
+                                    <a href="https://www.instagram.com/jirehtropicalsmoothie/" type="button" className="hidden text-white bg-purple-800 hover:text-purple-800 hover:bg-white font-medium rounded-lg text-xl px-5 py-2.5 text-center md:inline-flex items-center  mr-2 mb-2">
+                                        <img className="mr-4 h-14 w-14" src="/img/icon/instagram.png" />
+                                        jirehtropicalsmoothie
+                                    </a>
+                                    <a href="https://www.instagram.com/jirehtropicalsmoothie/" type="button" className="md:hidden text-white bg-purple-800 hover:text-purple-800 hover:bg-white font-medium rounded-lg text-xl md:px-5 px-2 py-2.5 text-center inline-flex items-center  mr-2 mb-2">
+                                        <img className="mr-4 h-14 w-14" src="/img/icon/instagram.png" />
+                                        INSTAGRAM
+                                    </a>
+                                    {/*     FACEBOOK */}
+                                    <a href="https://www.facebook.com/Jireh-Tropical-105032068837110" type="button" className="hidden text-white bg-blue-700 hover:text-blue-700 hover:bg-white font-medium rounded-lg text-xl px-5 py-2.5 text-center md:inline-flex items-center  mr-2 mb-2">
+                                        <img className="mr-4 h-14 w-14" src="/img/icon/facebook.png" />
+                                        Jireh Tropical
+                                    </a>
+                                    <a href="https://www.facebook.com/Jireh-Tropical-105032068837110" type="button" className="md:hidden text-white bg-blue-700 hover:text-blue-700 hover:bg-white font-medium rounded-lg text-xl md:px-5 px-2 py-2.5 text-center inline-flex items-center  mr-2 mb-2">
+                                        <img className="mr-4 h-14 w-14" src="/img/icon/facebook.png" />
+                                        FACEBOOK
+                                    </a>
+                                    {/* TWITTER */}
+                                    <a href="https://twitter.com/JirehTropical" type="button" className="hidden text-sky-600 hover:text-white hover:bg-sky-200 font-medium rounded-lg text-xl px-5 py-2.5 text-center md:inline-flex items-center  mr-2 mb-2">
+                                        <img className="mr-4 h-14 w-14" src="/img/icon/twitter.png" />
+                                        JirehTropical
+                                    </a>
+                                    <a href="https://twitter.com/JirehTropical" type="button" className="md:hidden text-sky-600 hover:text-white hover:bg-sky-200 font-medium rounded-lg text-xl md:px-5 px-2 py-2.5 text-center inline-flex items-center  mr-2 mb-2">
+                                        <img className="mr-4 h-14 w-14" src="/img/icon/twitter.png" />
+                                        TWITTER
+                                    </a>
+                                </div>
                             </div>
                         </div>
 
