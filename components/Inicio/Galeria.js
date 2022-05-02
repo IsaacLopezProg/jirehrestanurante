@@ -269,7 +269,7 @@ export default function Galeria() {
                             >
                                 <Carousel showArrows={true} emulateTouch={true} autoPlay={true}>
                                     {fotos.map(foto => (
-                                        <div style={{ height: '550px', with: '450px' }}>
+                                        <div key={foto.id} style={{ height: '550px', with: '450px' }}>
                                             <img src={foto.src} alt="fotos" />
                                         </div>
                                     ))}

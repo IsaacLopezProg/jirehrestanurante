@@ -50,7 +50,7 @@ export default function Cheff() {
                                 <p className="text-lg md:text-3xl text-gray-200 font-light">
                                     {data.Lastname}
                                 </p>
-                                <p class="text-base md:text-lg  w-60 text-gray-200 mx-auto py-4 font-light">
+                                <p className="text-base md:text-lg  w-60 text-gray-200 mx-auto py-4 font-light">
                                     {data.Description}
                                 </p>
                             </div>
