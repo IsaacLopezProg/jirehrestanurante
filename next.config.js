@@ -6,7 +6,11 @@ const nextConfig = {
 module.exports = {
   images: {
     formats: ['image/webp'],
-    domains: ['https://via.placeholder.com', 'https://placeholder.com/'],
+    domains: ['https://via.placeholder.com',
+      'https://placeholder.com/',
+      'https://jirehtropical.s3.amazonaws.com/',
+      'https://jirehtropical.s3.amazonaws.com'
+    ],
   },
 }
 
