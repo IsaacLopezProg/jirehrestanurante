@@ -29,9 +29,9 @@ export default function Menu() {
 
     useEffect(() => {
         (async () => {
-            const url = `${url}/breakfast-homes`;
+            const path = `${url}/breakfast-homes`;
             // const respo = await axios.get(url);
-            const respuesta = await fetch(url);
+            const respuesta = await fetch(path);
             const datos = await respuesta.json();
             if (datos) {
                 setDesayuno(
@@ -42,9 +42,9 @@ export default function Menu() {
         })();
 
         (async () => {
-            const url = `${url}/drinks-homes`;
+            const path = `${url}/drinks-homes`;
             // const respo = await axios.get(url);
-            const respuesta = await fetch(url);
+            const respuesta = await fetch(path);
             const datos = await respuesta.json();
             if (datos) {
                 setBebidas(
@@ -56,9 +56,9 @@ export default function Menu() {
         })();
 
         (async () => {
-            const url = `${url}/lunch-homes`;
+            const path = `${url}/lunch-homes`;
             // const respo = await axios.get(url);
-            const respuesta = await fetch(url);
+            const respuesta = await fetch(path);
             const datos = await respuesta.json();
             if (datos) {
                 setComida(
@@ -69,9 +69,9 @@ export default function Menu() {
         })();
 
         (async () => {
-            const url = `${url}/desserts`;
+            const path = `${url}/desserts`;
             // const respo = await axios.get(url);
-            const respuesta = await fetch(url);
+            const respuesta = await fetch(path);
             const datos = await respuesta.json();
             if (datos) {
                 setPostre(
