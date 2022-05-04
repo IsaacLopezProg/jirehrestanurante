@@ -14,6 +14,9 @@ function classNames(...classes) {
 
 export default function Menu() {
 
+    // LLAMADA DE LA URL
+    const url = process.env.NEXT_PUBLIC_URL;
+
     // DESTRUCTURACION DE VALORES Y LLAMADO A LA API
 
     const [desayuno, setDesayuno] = useState();
@@ -26,7 +29,7 @@ export default function Menu() {
 
     useEffect(() => {
         (async () => {
-            const url = 'http://localhost:1337/breakfast-homes'
+            const url = `${url}/breakfast-homes`;
             // const respo = await axios.get(url);
             const respuesta = await fetch(url);
             const datos = await respuesta.json();
@@ -39,7 +42,7 @@ export default function Menu() {
         })();
 
         (async () => {
-            const url = 'http://localhost:1337/drinks-homes'
+            const url = `${url}/drinks-homes`;
             // const respo = await axios.get(url);
             const respuesta = await fetch(url);
             const datos = await respuesta.json();
@@ -53,7 +56,7 @@ export default function Menu() {
         })();
 
         (async () => {
-            const url = 'http://localhost:1337/lunch-homes'
+            const url = `${url}/lunch-homes`;
             // const respo = await axios.get(url);
             const respuesta = await fetch(url);
             const datos = await respuesta.json();
@@ -66,7 +69,7 @@ export default function Menu() {
         })();
 
         (async () => {
-            const url = 'http://localhost:1337/desserts'
+            const url = `${url}/desserts`;
             // const respo = await axios.get(url);
             const respuesta = await fetch(url);
             const datos = await respuesta.json();
