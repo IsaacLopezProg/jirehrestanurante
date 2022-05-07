@@ -166,7 +166,7 @@ export default function Galeria() {
                     }
                     :
                     {
-                        src: '/img/galeria/jugo1.jpeg',
+                        src: '/img/galeria/comida12.jpeg',
                         width: 4,
                         height: 3
                     }
@@ -179,7 +179,7 @@ export default function Galeria() {
                     }
                     :
                     {
-                        src: '/img/galeria/comida14.jpeg',
+                        src: '/img/galeria/comida13.jpeg',
                         width: 4,
                         height: 3
                     }
@@ -194,7 +194,119 @@ export default function Galeria() {
                     }
                     :
                     {
+                        src: '/img/galeria/comida14.jpeg',
+                        width: 4,
+                        height: 3
+                    }
+                ),
+                (datos.data.photos[12] !== undefined
+                    ?
+                    {
+                        src: datos.data.photos[12].url,
+                        width: 4,
+                        height: 3
+                    }
+                    :
+                    {
                         src: '/img/galeria/comida21.jpeg',
+                        width: 4,
+                        height: 3
+                    }
+                ),
+                (datos.data.photos[13] !== undefined
+                    ?
+                    {
+                        src: datos.data.photos[13].url,
+                        width: 4,
+                        height: 3
+                    }
+                    :
+                    {
+                        src: '/img/galeria/comida23.jpeg',
+                        width: 4,
+                        height: 3
+                    }
+                ),
+                (datos.data.photos[14] !== undefined
+                    ?
+                    {
+                        src: datos.data.photos[14].url,
+                        width: 4,
+                        height: 3
+                    }
+                    :
+                    {
+                        src: '/img/galeria/jugo1.jpeg',
+                        width: 4,
+                        height: 3
+                    }
+                ),
+                (datos.data.photos[15] !== undefined
+                    ?
+                    {
+                        src: datos.data.photos[15].url,
+                        width: 4,
+                        height: 3
+                    }
+                    :
+                    {
+                        src: '/img/galeria/jugo2.jpeg',
+                        width: 4,
+                        height: 3
+                    }
+                ),
+                (datos.data.photos[16] !== undefined
+                    ?
+                    {
+                        src: datos.data.photos[16].url,
+                        width: 4,
+                        height: 3
+                    }
+                    :
+                    {
+                        src: '/img/galeria/jugo3.jpeg',
+                        width: 4,
+                        height: 3
+                    }
+                ),
+                (datos.data.photos[17] !== undefined
+                    ?
+                    {
+                        src: datos.data.photos[17].url,
+                        width: 4,
+                        height: 3
+                    }
+                    :
+                    {
+                        src: '/img/galeria/jugo4.jpeg',
+                        width: 4,
+                        height: 3
+                    }
+                ),
+                (datos.data.photos[18] !== undefined
+                    ?
+                    {
+                        src: datos.data.photos[18].url,
+                        width: 4,
+                        height: 3
+                    }
+                    :
+                    {
+                        src: '/img/galeria/jugo5.jpeg',
+                        width: 4,
+                        height: 3
+                    }
+                ),
+                (datos.data.photos[19] !== undefined
+                    ?
+                    {
+                        src: datos.data.photos[19].url,
+                        width: 4,
+                        height: 3
+                    }
+                    :
+                    {
+                        src: '/img/galeria/jugo6.jpeg',
                         width: 4,
                         height: 3
                     }

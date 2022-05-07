@@ -1,6 +1,24 @@
 import Image from 'next/image';
 
-export default function Contacto({ idioma }) {
+import useConnection from '../../hooks/useConnect';
+
+// EXTERNAL
+import { Icon } from 'semantic-ui-react';
+
+export default function Contacto() {
+
+
+    // DESTRUCTURACION DE VALORES Y LLAMADO A LA API
+    const { data, isLoading, isError } = useConnection('/schedule-homes');
+
+    // if (isLoading) return <Spinner />
+    // AGREGANDO EL LOADING
+    if (isLoading) return <div className="flex justify-center m-8 p-8"><Icon loading name='spinner' size="massive" color="brown" /></div>
+    // MOSTRANDO EL ERROR
+    if (isError) return (<h2 className="text-center text-5xl text-amber-800 flex justify-center m-8 p-8 font-yellow"> A ocurrido un error </h2>)
+    //   if (isError) return <Error />
+
+    console.log(data);
 
 
 
@@ -190,11 +208,11 @@ export default function Contacto({ idioma }) {
                 <div className="PADRE md:flex md:flex-row justify-center">
 
 
-                    {horarioen.map(h => (
+                    {data.map(h => (
                         <div key={h.id} lang="en" className="HORARIO mt-8">
                             <div className="p-8 text-center bg-white text-amber-800 hover:text-white hover:bg-amber-600 m-4">
-                                <h4 className="font-bold  my-4 text-lg  md:text-2xl">{h.dia}</h4>
-                                <p className=" font-bold text-sm md:text-xl mt-4">{h.horao} - {h.horac} </p>
+                                <h4 className="font-bold  my-4 text-lg  md:text-2xl">{h.day}</h4>
+                                <p className=" font-bold text-sm md:text-xl mt-4">{(h.open).slice(-12, 5)} - {h.close.slice(-12, 5)} </p>
                             </div>
                         </div>
                     ))

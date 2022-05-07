@@ -51,19 +51,19 @@ export default function Headers(props) {
             >
                 <Menu.Item as='a'>
                     <Icon name='home' />
-                    {idioma === 'es' ? 'Inicio' : 'Home'}
+                    Home
                 </Menu.Item>
                 <Menu.Item as='a'>
                     <Icon name='sign-in' />
-                    {idioma === 'es' ? 'Iniciar Sesion' : 'Log In'}
+                    Log In
                 </Menu.Item>
                 <Menu.Item as='a'>
                     <Icon name='sign-out' />
-                    {idioma === 'es' ? 'Iniciar Sesion' : 'Log Out'}
+                    Log Out
                 </Menu.Item>
                 <Menu.Item as='a'>
                     <Icon name='favorite' />
-                    {idioma === 'es' ? 'Favoritos' : 'Favorite'}
+                    Favorite
                 </Menu.Item>
                 <Menu.Item as='a'>
                     <Icon name='list' />
@@ -71,11 +71,11 @@ export default function Headers(props) {
                 </Menu.Item>
                 <Menu.Item as='a'>
                     <Icon name='cart' />
-                    {idioma === 'es' ? 'Carrito' : 'Shopping Cart'}
+                    Shopping Cart
                 </Menu.Item>
                 <Menu.Item as='a'>
                     <Icon name='shipping fast' />
-                    {idioma === 'es' ? 'Pedidos' : 'Orders'}
+                    Orders
                 </Menu.Item>
             </Sidebar>
 
@@ -111,10 +111,10 @@ export default function Headers(props) {
                         <div className="hidden w-full md:block md:w-auto" id="mobile-menu">
                             <ul className="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-lg md:font-medium mr-8">
                                 <li>
-                                    <a href="#" className="block py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-white md:p-0 dark:text-white" aria-current="page">{idioma === 'es' ? 'Inicio' : 'Home'}</a>
+                                    <a href="#" className="block py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-white md:p-0 dark:text-white" aria-current="page">Home</a>
                                 </li>
                                 <li>
-                                    <a href="#" className="block py-2 pr-4 pl-3  border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">{idioma === 'es' ? 'Iniciar Sesion' : 'Log In'}</a>
+                                    <a href="#" className="block py-2 pr-4 pl-3  border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Log In</a>
                                 </li>
                                 {test ?
                                     (
@@ -123,10 +123,10 @@ export default function Headers(props) {
                                                 <a href="#" className="block py-2 pr-4 pl-3  border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Menu</a>
                                             </li>
                                             <li>
-                                                <a href="#" className="block py-2 pr-4 pl-3  border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">{idioma === 'es' ? 'Carrito' : 'Shpping Cart'}</a>
+                                                <a href="#" className="block py-2 pr-4 pl-3  border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Shopping Cart</a>
                                             </li>
                                             <li>
-                                                <a href="#" className="block py-2 pr-4 pl-3  hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">{idioma === 'es' ? 'Pedidos' : 'Orders'}</a>
+                                                <a href="#" className="block py-2 pr-4 pl-3  hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Orders</a>
                                             </li>
                                         </>
 
