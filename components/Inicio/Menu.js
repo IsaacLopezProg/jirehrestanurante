@@ -81,7 +81,7 @@ export default function Menu() {
 
         })();
 
-    }, [])
+    }, [url])
 
     if (!bebidas && !undefined) return <div className="flex justify-center m-8 p-8"><Icon loading name='spinner' size="massive" color="brown" /></div>
     if (!desayuno && !undefined) return <div className="flex justify-center m-8 p-8"><Icon loading name='spinner' size="massive" color="brown" /></div>
