@@ -33,8 +33,7 @@ class MyDocument extends next_document__WEBPACK_IMPORTED_MODULE_1__["default"] {
                         }),
                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("link", {
                             rel: "preconnect",
-                            href: "https://fonts.gstatic.com",
-                            crossOrigin: true
+                            href: "https://fonts.gstatic.com"
                         }),
                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("link", {
                             href: "https://fonts.googleapis.com/css2?family=Yellowtail&display=swap",
