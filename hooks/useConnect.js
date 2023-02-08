@@ -16,6 +16,8 @@ export default function useConnection(path) {
     // PETICION
     const { data, error } = useSWR(`${url}${path}`, fetcher)
 
+    console.log(url)
+
     // DEVUELTA DE VALORES
     return {
         data,

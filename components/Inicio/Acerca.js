@@ -18,6 +18,9 @@ export default function About() {
     // MOSTRANDO EL ERROR
     if (isError) return (<h2 className="text-center text-5xl text-amber-800 flex justify-center m-8 p-8 font-yellow"> A ocurrido un error </h2>)
     //   if (isError) return <Error />
+    console.log(useConnection)
+
+    // if (data.length <= 0) return (<h2 className="text-center text-5xl text-amber-800 flex justify-center m-8 p-8 font-yellow"> No hay conexion con la db </h2>)
 
     return (
         <>
@@ -37,8 +40,8 @@ export default function About() {
                     <div className="FOTO md:basis-1/4 mt-8 bg-amber-800 mx-4 rounded-2xl flex justify-center">
                         <div className="mx-12 mb-8 pt-8 rounded-lg bg-amber-800">
                             {/* <div className="mx-12 mb-8 pt-8 rounded-lg bg-amber-800" style={{ height: '326.25px', width: '282.75px' }}> */}
-                            <img className="h-72 w-56 rounded-2xl" src={data.Photo_left.url} alt="hombre" />
-                            {/* <Image src={data.Photo_left.url} rounded size='large' /> */}
+                            {/* <img className="h-72 w-56 rounded-2xl" src={data.Photo_left.url} alt="hombre" /> */}
+                            <Image src={data.Photo_left.url} rounded size='large' />
                         </div>
                     </div>
                     <div className="TEXTO mt-8 md:basis-2/4  mx-8 flex justify-center items-center bg-amber-800 rounded-2xl">
