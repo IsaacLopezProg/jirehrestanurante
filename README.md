@@ -1,6 +1,5 @@
-#Jireh Tropical Restaurant
+##Jireh Tropical Restaurant
 
-## Tech Stack
 
 Web project of a restaurant.
 
